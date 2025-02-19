@@ -60,7 +60,7 @@ The deployment process involves the following steps:
 
 ## Getting Started
 
-1. **Clone the repository:** `git clone https://github.com/your-username/serverless-url-shortener.git`
+1. **Clone the repository:** `git clone https://github.com/blossom2016/serverless-url-shortener`
 2. **Install Terraform:** Follow the instructions on the Terraform website.
 3. **Configure AWS Credentials:** Set up your AWS credentials.
 4. **Navigate to the Terraform directory:** `cd terraform`
@@ -70,9 +70,7 @@ The deployment process involves the following steps:
 8. **Configure S3:** Upload the frontend files to the created S3 bucket.
 9. **Access the application:** The shortened URLs will be accessible via your domain name (if configured) or the S3 website endpoint.
 
-## Screenshots (Optional)
 
-(Include screenshots of the frontend and any relevant parts of the AWS console)
 
 ## Future Enhancements
 
@@ -84,8 +82,5 @@ The deployment process involves the following steps:
 
 ## Author
 
-Your Name
+Blossom Williams 
 
-## License
-
-(Choose a license, e.g., MIT)

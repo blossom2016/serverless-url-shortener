@@ -10,7 +10,7 @@ dynamodb = boto3.resource('dynamodb')
 table_name = os.environ.get('url_shortener', 'url_shortener') # replace with your DynamoDB table name 
 table = dynamodb.Table(table_name)
 
-BASE_URL = os.environ.get('BASE_URL', 'https://e2tf8plli2.execute-api.us-east-2.amazonaws.com')# replace with your base URL
+BASE_URL = os.environ.get('BASE_URL', 'https://qcko9iw74m.execute-api.us-east-2.amazonaws.com/dev')# replace with your base URL
 
 def generate_short_code(url):
     hash_object = hashlib.md5(url.encode())

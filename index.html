@@ -7,7 +7,7 @@
     <script>
         async function shortenURL() {
             const url = document.getElementById('url').value;
-            const response = await fetch('https://e2tf8plli2.execute-api.us-east-2.amazonaws.com', {
+            const response = await fetch('https://qcko9iw74m.execute-api.us-east-2.amazonaws.com/dev', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({url})
