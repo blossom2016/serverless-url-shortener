@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>URL Shortener</title>
+    <script>
+        async function shortenURL() {
+            const url = document.getElementById('url').value;
+            const response = await fetch('https://e2tf8plli2.execute-api.us-east-2.amazonaws.com', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({url})
+            });
+            const data = await response.json();
+            document.getElementById('result').innerHTML = `Shortened URL: <a href="${data.short_url}" target="_blank">${data.short_url}</a>`;
+        }
+    </script>
+</head>
+<body>
+    <h1>Simple URL Shortener</h1>
+    <input type='text' id='url' placeholder='Enter URL here'>
+    <button onclick='shortenURL()'>Shorten</button>
+    <p id='result'></p>
+</body>
+</html>
